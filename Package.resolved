@@ -1,0 +1,205 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "async-http-client",
+        "repositoryURL": "https://github.com/swift-server/async-http-client.git",
+        "state": {
+          "branch": null,
+          "revision": "e2636a4c24e646d3e480fc666da0c090818beb09",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "async-kit",
+        "repositoryURL": "https://github.com/vapor/async-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "42edd5d6b52afc0678f85d4a67aa79e0be79fba5",
+          "version": "1.0.0-beta.2.6"
+        }
+      },
+      {
+        "package": "console-kit",
+        "repositoryURL": "https://github.com/vapor/console-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "a10418160fd4d2af183b0a754a93373734d6ba80",
+          "version": "4.0.0-beta.2.3"
+        }
+      },
+      {
+        "package": "fluent",
+        "repositoryURL": "https://github.com/michaelschlicker/fluent-grpc.git",
+        "state": {
+          "branch": "b4feed4",
+          "revision": "b4feed4195166a09c4857f024976b40ad5ed6f93",
+          "version": null
+        }
+      },
+      {
+        "package": "fluent-kit",
+        "repositoryURL": "https://github.com/vapor/fluent-kit.git",
+        "state": {
+          "branch": "2535037",
+          "revision": "2535037242a0eaec0d6bfcdfaa92e141f632f94f",
+          "version": null
+        }
+      },
+      {
+        "package": "fluent-sqlite-driver",
+        "repositoryURL": "https://github.com/vapor/fluent-sqlite-driver.git",
+        "state": {
+          "branch": "d2bb65b",
+          "revision": "d2bb65b333a046e8ed64053312a6d6bdeb3a3590",
+          "version": null
+        }
+      },
+      {
+        "package": "GRPC",
+        "repositoryURL": "https://github.com/grpc/grpc-swift.git",
+        "state": {
+          "branch": "58762ba",
+          "revision": "58762bae04f54978e09032306225ddffc9c0fc5a",
+          "version": null
+        }
+      },
+      {
+        "package": "multipart-kit",
+        "repositoryURL": "https://github.com/vapor/multipart-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "b41a49b5756ac3fbf8f2b07228a7e75f9b60731a",
+          "version": "4.0.0-beta.2"
+        }
+      },
+      {
+        "package": "open-crypto",
+        "repositoryURL": "https://github.com/vapor/open-crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "90c49bc68ee6d992fa13cf84ca8fc54b97eaf4cc",
+          "version": "4.0.0-beta.2"
+        }
+      },
+      {
+        "package": "routing-kit",
+        "repositoryURL": "https://github.com/vapor/routing-kit",
+        "state": {
+          "branch": "39f0710",
+          "revision": "39f07109cf2904f9b343fa26f5eccdd3fbf96cad",
+          "version": null
+        }
+      },
+      {
+        "package": "sql-kit",
+        "repositoryURL": "https://github.com/vapor/sql-kit",
+        "state": {
+          "branch": "f0e0029",
+          "revision": "f0e002988035a80f858f42ab27ed2bca54c56b79",
+          "version": null
+        }
+      },
+      {
+        "package": "sqlite-kit",
+        "repositoryURL": "https://github.com/vapor/sqlite-kit",
+        "state": {
+          "branch": "f25b68e",
+          "revision": "f25b68ef1a022ab1bc4b26155e931d69ee1a533c",
+          "version": null
+        }
+      },
+      {
+        "package": "sqlite-nio",
+        "repositoryURL": "https://github.com/vapor/sqlite-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "7d328730c696842a1746e1a3b672f1742bb1835a",
+          "version": "1.0.0-beta.2.2"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "16ab4d657e1ad4e77bd5f8b94af8538561643053",
+          "version": "2.14.0"
+        }
+      },
+      {
+        "package": "swift-nio-extras",
+        "repositoryURL": "https://github.com/apple/swift-nio-extras.git",
+        "state": {
+          "branch": null,
+          "revision": "b4dbfacff47fb8d0f9e0a422d8d37935a9f10570",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "package": "swift-nio-http2",
+        "repositoryURL": "https://github.com/apple/swift-nio-http2.git",
+        "state": {
+          "branch": null,
+          "revision": "65ebab9db70623bf1b58305edaa26ee5629856ed",
+          "version": "1.9.1"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "af46d9b58fafbb76f9b01177568d435a1b024f99",
+          "version": "2.6.2"
+        }
+      },
+      {
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
+        "state": {
+          "branch": null,
+          "revision": "c7f06384dc5ce7e8506de5ed9b59e35b4d88c64b",
+          "version": "1.3.0"
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "state": {
+          "branch": null,
+          "revision": "7790acf0a81d08429cb20375bf42a8c7d279c5fe",
+          "version": "1.8.0"
+        }
+      },
+      {
+        "package": "vapor",
+        "repositoryURL": "https://github.com/michaelschlicker/vapor-grpc.git",
+        "state": {
+          "branch": "569a1828",
+          "revision": "569a1828eb91f832c3f98671ffea5069c0b86795",
+          "version": null
+        }
+      },
+      {
+        "package": "websocket-kit",
+        "repositoryURL": "https://github.com/vapor/websocket-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "670e757f21cc8f1f76a04baac72f72ea1590e18d",
+          "version": "2.0.0-beta.2.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
