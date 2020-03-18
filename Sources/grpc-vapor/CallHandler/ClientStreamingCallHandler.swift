@@ -28,7 +28,7 @@ public class ClientStreamingCallHandler<RequestMessage: GRPCMessage, ResponseMes
         let stream = GRPCStream<RequestMessage.ModelType>.start(nextStr.futureResult)
         let request = GRPCClientStreamRequest<RequestMessage.ModelType>.init(stream: stream, vaporRequest: vaporRequest)
 
-        let responseMessage: EventLoopFuture<ResponseMessage.ModelType> = eventObserverFactory(request)
+        let responseMessage: EventLoopFuture<ResponseMessage.ModelType> = procedureCall(request)
 
         vaporRequest.body.drain { bodyStream in
             switch bodyStream {
