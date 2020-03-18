@@ -31,7 +31,7 @@ extension StreamingResponseProcessable {
 
     private func processResponseMessage(message: GRPCStream<ResponseMessage.ModelType>, writer: BodyStreamWriter, buffer: ByteBuffer) {
         switch message {
-        case let.message(modelMessage, nextMessage: nextMessage):
+        case let .message(modelMessage, nextMessage: nextMessage):
             let responseMessageObject = ResponseMessage(modelObject: modelMessage)
             guard let responseData = try? responseMessageObject.serializedData() else {
                 _ = writer.write(.error(GRPCError.error))

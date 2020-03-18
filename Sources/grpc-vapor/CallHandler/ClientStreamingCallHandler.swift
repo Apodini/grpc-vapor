@@ -14,11 +14,11 @@ public class ClientStreamingCallHandler<RequestMessage: GRPCMessage, ResponseMes
 
     private var promise: EventLoopPromise<Response>
 
-    public var eventObserverFactory: (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>
+    public var procedureCall: (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>
 
-    public init(vaporRequest: Request, eventObserverFactory: @escaping (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>) throws {
+    public init(vaporRequest: Request, procedureCall: @escaping (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>) throws {
         self.vaporRequest = vaporRequest
-        self.eventObserverFactory = eventObserverFactory
+        self.procedureCall = procedureCall
 
         self.promise = vaporRequest.eventLoop.makePromise(of: Response.self)
 
