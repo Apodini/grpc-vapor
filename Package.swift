@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -26,9 +26,18 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "GRPCVapor",
-            dependencies: ["FluentSQLiteDriver", "Vapor", "GRPC", "Fluent"]),
+            dependencies: [
+                .product(name: "GRPC", package: "grpc-swift"),
+                .product(name: "Vapor", package: "vapor"),
+                .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
+                .product(name: "Fluent", package: "fluent"),
+            ]
+        ),
         .testTarget(
             name: "GRPCVaporTests",
-            dependencies: ["GRPCVapor", "XCTVapor"]),
+            dependencies: ["GRPCVapor",
+                           .product(name: "XCTVapor", package: "vapor")
+            ]
+        ),
     ]
 )
