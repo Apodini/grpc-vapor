@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/vapor/async-kit.git",
         "state": {
           "branch": null,
-          "revision": "42edd5d6b52afc0678f85d4a67aa79e0be79fba5",
-          "version": "1.0.0-beta.2.6"
+          "revision": "094dad1142e4e272a328ab44edd39730f246fb3e",
+          "version": "1.0.0-rc.1"
         }
       },
       {
@@ -24,35 +24,35 @@
         "repositoryURL": "https://github.com/vapor/console-kit.git",
         "state": {
           "branch": null,
-          "revision": "a10418160fd4d2af183b0a754a93373734d6ba80",
-          "version": "4.0.0-beta.2.3"
+          "revision": "de99d83c9f3c298371002729cc0601e4b5d9e0c9",
+          "version": "4.0.0-rc.1"
         }
       },
       {
         "package": "fluent",
-        "repositoryURL": "https://github.com/michaelschlicker/fluent-grpc.git",
+        "repositoryURL": "https://github.com/vapor/fluent.git",
         "state": {
-          "branch": "b4feed4",
-          "revision": "b4feed4195166a09c4857f024976b40ad5ed6f93",
-          "version": null
+          "branch": null,
+          "revision": "3eafdfe53c7d945c87769ec443e8ea5528ab9e32",
+          "version": "4.0.0-rc.1"
         }
       },
       {
         "package": "fluent-kit",
         "repositoryURL": "https://github.com/vapor/fluent-kit.git",
         "state": {
-          "branch": "2535037",
-          "revision": "2535037242a0eaec0d6bfcdfaa92e141f632f94f",
-          "version": null
+          "branch": null,
+          "revision": "a15e8c5e288279221739d38a72cc7cbfce2efc75",
+          "version": "1.0.0-rc.1.10"
         }
       },
       {
         "package": "fluent-sqlite-driver",
         "repositoryURL": "https://github.com/vapor/fluent-sqlite-driver.git",
         "state": {
-          "branch": "d2bb65b",
-          "revision": "d2bb65b333a046e8ed64053312a6d6bdeb3a3590",
-          "version": null
+          "branch": null,
+          "revision": "df46fa5cb2d3e42cd02f55fe8136b4c3269ad6d1",
+          "version": "4.0.0-rc.1.1"
         }
       },
       {
@@ -65,48 +65,30 @@
         }
       },
       {
-        "package": "multipart-kit",
-        "repositoryURL": "https://github.com/vapor/multipart-kit.git",
-        "state": {
-          "branch": null,
-          "revision": "b41a49b5756ac3fbf8f2b07228a7e75f9b60731a",
-          "version": "4.0.0-beta.2"
-        }
-      },
-      {
-        "package": "open-crypto",
-        "repositoryURL": "https://github.com/vapor/open-crypto.git",
-        "state": {
-          "branch": null,
-          "revision": "90c49bc68ee6d992fa13cf84ca8fc54b97eaf4cc",
-          "version": "4.0.0-beta.2"
-        }
-      },
-      {
         "package": "routing-kit",
-        "repositoryURL": "https://github.com/vapor/routing-kit",
+        "repositoryURL": "https://github.com/vapor/routing-kit.git",
         "state": {
-          "branch": "39f0710",
-          "revision": "39f07109cf2904f9b343fa26f5eccdd3fbf96cad",
-          "version": null
+          "branch": null,
+          "revision": "dbc3eafdbe243e9a46eeb6fd7d99266bee52f89f",
+          "version": "4.0.0-rc.1"
         }
       },
       {
         "package": "sql-kit",
-        "repositoryURL": "https://github.com/vapor/sql-kit",
+        "repositoryURL": "https://github.com/vapor/sql-kit.git",
         "state": {
-          "branch": "f0e0029",
-          "revision": "f0e002988035a80f858f42ab27ed2bca54c56b79",
-          "version": null
+          "branch": null,
+          "revision": "64c2af0321cd6445982d6873d100cc62e16afcf7",
+          "version": "3.0.0-rc.1.2"
         }
       },
       {
         "package": "sqlite-kit",
-        "repositoryURL": "https://github.com/vapor/sqlite-kit",
+        "repositoryURL": "https://github.com/vapor/sqlite-kit.git",
         "state": {
-          "branch": "f25b68e",
-          "revision": "f25b68ef1a022ab1bc4b26155e931d69ee1a533c",
-          "version": null
+          "branch": null,
+          "revision": "7251abf07442da3e5dc6e13e1564670bf82e10d3",
+          "version": "4.0.0-rc.1"
         }
       },
       {
@@ -114,17 +96,44 @@
         "repositoryURL": "https://github.com/vapor/sqlite-nio.git",
         "state": {
           "branch": null,
-          "revision": "7d328730c696842a1746e1a3b672f1742bb1835a",
-          "version": "1.0.0-beta.2.2"
+          "revision": "96f69e53f503830e55280c5c4fbaffc0b50eadd5",
+          "version": "1.0.0-rc.1"
+        }
+      },
+      {
+        "package": "swift-backtrace",
+        "repositoryURL": "https://github.com/swift-server/swift-backtrace.git",
+        "state": {
+          "branch": null,
+          "revision": "eaf2cef011c0c23d1701aa60b364def8015dc3c7",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "swift-crypto",
+        "repositoryURL": "https://github.com/apple/swift-crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "9be4a93a76d4b80105044747b35d456de7289c87",
+          "version": "1.0.0"
         }
       },
       {
         "package": "swift-log",
-        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "repositoryURL": "https://github.com/apple/swift-log",
         "state": {
           "branch": null,
           "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
           "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-metrics",
+        "repositoryURL": "https://github.com/apple/swift-metrics.git",
+        "state": {
+          "branch": null,
+          "revision": "708b960b4605abb20bc55d65abf6bad607252200",
+          "version": "2.0.0"
         }
       },
       {
@@ -183,11 +192,11 @@
       },
       {
         "package": "vapor",
-        "repositoryURL": "https://github.com/michaelschlicker/vapor-grpc.git",
+        "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
-          "branch": "569a1828",
-          "revision": "569a1828eb91f832c3f98671ffea5069c0b86795",
-          "version": null
+          "branch": null,
+          "revision": "57398ebf41376c0e4953e661e03b3c01224bea21",
+          "version": "4.0.0-rc.3.5"
         }
       },
       {
@@ -195,8 +204,8 @@
         "repositoryURL": "https://github.com/vapor/websocket-kit.git",
         "state": {
           "branch": null,
-          "revision": "670e757f21cc8f1f76a04baac72f72ea1590e18d",
-          "version": "2.0.0-beta.2.5"
+          "revision": "aac462481bcd3039d5db9a0fbe7f4e47eefe2295",
+          "version": "2.0.0-rc.1"
         }
       }
     ]

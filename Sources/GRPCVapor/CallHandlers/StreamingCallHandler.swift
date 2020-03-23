@@ -7,33 +7,38 @@
 
 import Vapor
 
-public class ClientStreamingCallHandler<RequestMessage: GRPCMessage, ResponseMessage: GRPCMessage>: AnyCallHandler, RequestProcessable, ResponseProcessable {
+public class StreamingCallHandler<RequestMessage: GRPCMessage, ResponseMessage: GRPCMessage>: AnyCallHandler, RequestProcessable, StreamingResponseProcessable {
+
     public var vaporRequest: Request
 
     public var response: EventLoopFuture<Response> { return promise.futureResult }
 
     private var promise: EventLoopPromise<Response>
+    private var request: GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>?
 
-    public var procedureCall: (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>
+    var eventFactory: ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)
+    var handler: StreamingCallHandler<RequestMessage, ResponseMessage>?
 
-    public init(vaporRequest: Request, procedureCall: @escaping (GRPCClientStreamRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>) throws {
+
+    public init(vaporRequest: Request,
+                eventFactory: @escaping ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)) throws {
         self.vaporRequest = vaporRequest
-        self.procedureCall = procedureCall
-
         self.promise = vaporRequest.eventLoop.makePromise(of: Response.self)
-
-        var firstBuffer: ByteBuffer?
+        self.eventFactory = eventFactory
+        self.handler = self
 
         var nextStr: EventLoopPromise<GRPCStream<RequestMessage.ModelType>> = vaporRequest.eventLoop.makePromise(of: GRPCStream<RequestMessage.ModelType>.self)
         let stream = GRPCStream<RequestMessage.ModelType>.start(nextStr.futureResult)
-        let request = GRPCClientStreamRequest<RequestMessage.ModelType>.init(stream: stream, vaporRequest: vaporRequest)
+        let request = GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>.init(messageStream: stream, vaporRequest: vaporRequest)
 
-        let responseMessage: EventLoopFuture<ResponseMessage.ModelType> = procedureCall(request)
+        let resposeBuffer = ByteBufferAllocator().buffer(capacity: 0)
+        let response = try handler!.processResponse(request.responseStream, buffer: resposeBuffer)
+        self.promise.succeed(response)
 
+        eventFactory(request)
         vaporRequest.body.drain { bodyStream in
             switch bodyStream {
             case let .buffer(buff):
-                firstBuffer = buff
                 guard let message = try? self.processRequest(buff) else {
                     return vaporRequest.eventLoop.makeSucceededFuture(())
                 }
@@ -43,14 +48,14 @@ public class ClientStreamingCallHandler<RequestMessage: GRPCMessage, ResponseMes
                 nextStr = newNext
             case .end:
                 nextStr.succeed(.end)
-                responseMessage.whenSuccess { responseMessage in
-                    let response = try! self.processResponse(responseMessage, buffer: firstBuffer!)
-                    self.promise.succeed(response)
-                }
             case let .error(error):
-                break
+                return vaporRequest.eventLoop.makeFailedFuture(error)
             }
             return vaporRequest.eventLoop.makeSucceededFuture(())
         }
+    }
+
+    func endResponse() {
+        handler = nil
     }
 }

@@ -16,7 +16,7 @@ public protocol AnyCallHandler {
 
 extension AnyCallHandler {
     public var errorResponse: Response {
-        Response.init(status: .ok,
+        Response.init(status: .badRequest,
                       version: .init(major: 2, minor: 0),
                       headers: vaporRequest.headers,
                       body: Response.Body.init())
