@@ -7,7 +7,7 @@
 
 import Vapor
 
-public class GRPCStreamRequest<RequestModel: GRPCModel, ResponseModel: GRPCModel> {
+public class GRPCStreamRequest<RequestModel: GRPCModel, ResponseModel: GRPCModel>: GRPCRequestType {
 
     // MARK: Public Attributes
 

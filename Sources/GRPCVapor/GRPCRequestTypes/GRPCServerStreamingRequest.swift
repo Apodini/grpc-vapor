@@ -14,7 +14,7 @@ A `GRPCServerStreamRequest` instance represents a server-streaming gRPC request 
  One constraint for the `RequestModel` type and one constraint for the `ResponseModel`.
 */
 
-public class GRPCServerStreamRequest<RequestModel: GRPCModel, ResponseModel: GRPCModel> {
+public class GRPCServerStreamRequest<RequestModel: GRPCModel, ResponseModel: GRPCModel>: GRPCRequestType {
 
     // MARK: Public Attributes
 

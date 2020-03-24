@@ -15,11 +15,11 @@ public class UnaryCallHandler<RequestMessage: GRPCMessage, ResponseMessage: GRPC
 
     private var promise: EventLoopPromise<Response>
 
-    public var eventObserverFactory: (GRPCRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>
+    public var procedureCall: (GRPCRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>
 
-    public init(vaporRequest: Request, eventObserverFactory: @escaping (GRPCRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>) throws {
+    public init(vaporRequest: Request, procedureCall: @escaping (GRPCRequest<RequestMessage.ModelType>) -> EventLoopFuture<ResponseMessage.ModelType>) throws {
         self.vaporRequest = vaporRequest
-        self.eventObserverFactory = eventObserverFactory
+        self.procedureCall = procedureCall
 
         self.promise = vaporRequest.eventLoop.makePromise(of: Response.self)
 
@@ -30,7 +30,7 @@ public class UnaryCallHandler<RequestMessage: GRPCMessage, ResponseMessage: GRPC
                 let request = GRPCRequest<RequestMessage.ModelType>(message: requestMessage,
                                                                     vaporRequest: self.vaporRequest)
 
-                _ = eventObserverFactory(request)
+                _ = procedureCall(request)
                     .map { responseModel in
                         
                         do {

@@ -16,15 +16,15 @@ public class StreamingCallHandler<RequestMessage: GRPCMessage, ResponseMessage: 
     private var promise: EventLoopPromise<Response>
     private var request: GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>?
 
-    var eventFactory: ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)
+    var procedureCall: ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)
     var handler: StreamingCallHandler<RequestMessage, ResponseMessage>?
 
 
     public init(vaporRequest: Request,
-                eventFactory: @escaping ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)) throws {
+                procedureCall: @escaping ((GRPCStreamRequest<RequestMessage.ModelType, ResponseMessage.ModelType>) -> Void)) throws {
         self.vaporRequest = vaporRequest
         self.promise = vaporRequest.eventLoop.makePromise(of: Response.self)
-        self.eventFactory = eventFactory
+        self.procedureCall = procedureCall
         self.handler = self
 
         var nextStr: EventLoopPromise<GRPCStream<RequestMessage.ModelType>> = vaporRequest.eventLoop.makePromise(of: GRPCStream<RequestMessage.ModelType>.self)
@@ -35,7 +35,7 @@ public class StreamingCallHandler<RequestMessage: GRPCMessage, ResponseMessage: 
         let response = try handler!.processResponse(request.responseStream, buffer: resposeBuffer)
         self.promise.succeed(response)
 
-        eventFactory(request)
+        procedureCall(request)
         vaporRequest.body.drain { bodyStream in
             switch bodyStream {
             case let .buffer(buff):
