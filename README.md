@@ -11,7 +11,7 @@ The encoding and decoding of the gRPC messages is realized using the [SwiftProto
 ## Supported Systems
 This framework works with Vapor version 4.0 or higher and requires the Swift version to be 5.2 or higher.
 
-## Basic Structure
+## Framework
 The interface of this framework primarly consists of three main components that are needed to declare and integrate gRPC services in an existing Vapor application: 
 - A `GRPCMiddleware` that implements Vapors `Middleware` protocol and can therefore be added to a Vapor application.
 - A `GRPCService` protocol that declares a structure or class as a gRPC service and provides a routing method for remote procedure calls.
@@ -23,6 +23,8 @@ Using call handlers
 GRPCMessage
 GRPCRequest
 GRPCStream
+
+## Generator
 
 
 ## Usage
