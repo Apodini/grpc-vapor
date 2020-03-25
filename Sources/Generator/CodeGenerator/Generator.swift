@@ -170,7 +170,6 @@ struct Generator {
         extensionFile.println()
         extensionFile.println("init(modelObject: \(model.fullName)) {")
         extensionFile.startIndent()
-        extensionFile.println("var message = _\(model.fullName)()")
         model.attributes.forEach { generateMessageAttribute(attribute: $0, model: model, fileWriter: extensionFile) }
         extensionFile.endIndent()
         extensionFile.println("}")

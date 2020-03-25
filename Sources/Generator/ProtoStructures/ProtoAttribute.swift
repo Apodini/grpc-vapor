@@ -11,7 +11,7 @@ struct ProtoAttribute {
     var name: String
     var fieldNumber: Int
     var type: AttributeType
-    var protoOptionalName: String { name + "_optional" }
+    var protoOptionalName: String { name + "Optional" }
 }
 
 extension ProtoAttribute: Comparable {
