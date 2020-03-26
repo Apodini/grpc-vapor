@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GRPCServerStreamRequest Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GRPCServerStreamRequest" class="dashAnchor"></a>
+    <a title="GRPCServerStreamRequest Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GRPCVapor Docs</a> (43% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GRPCVapor Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GRPCServerStreamRequest Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClientStreamingCallHandler.html">ClientStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCClientStreamRequest.html">GRPCClientStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCMiddleware.html">GRPCMiddleware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCRequest.html">GRPCRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCServerStreamRequest.html">GRPCServerStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCStreamRequest.html">GRPCStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerStreamingCallHandler.html">ServerStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StreamingCallHandler.html">StreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnaryCallHandler.html">UnaryCallHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/GRPCError.html">GRPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GRPCStream.html">GRPCStream</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCMessage.html">GRPCMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCModel.html">GRPCModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCRequestType.html">GRPCRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCService.html">GRPCService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RequestProcessable.html">RequestProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ResponseProcessable.html">ResponseProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StreamingResponseProcessable.html">StreamingResponseProcessable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GRPCServerStreamRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GRPCServerStreamRequest</span><span class="o">&lt;</span><span class="kt">RequestModel</span><span class="p">,</span> <span class="kt">ResponseModel</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">RequestModel</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/GRPCModel.html">GRPCModel</a></span><span class="p">,</span> <span class="kt">ResponseModel</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/GRPCModel.html">GRPCModel</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A <code>GRPCServerStreamRequest</code> instance represents a server-streaming gRPC request that provides the single incoming value and <code>sendResponse</code> and <code>sendEnd</code> methods to send a multiple responses.
+ It implements the <code><a href="../Protocols/GRPCRequestType.html">GRPCRequestType</a></code> that requires it to contain its Vapor <code>Request</code> and provides several shortcuts to several Vapor stack functionality.
+ This is also a generic class which has two type constraits that implement the <code><a href="../Protocols/GRPCModel.html">GRPCModel</a></code> protocol.
+ One constraint for the <code>RequestModel</code> type and one constraint for the <code>ResponseModel</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Attributes"></a>
+                <a name="//apple_ref/swift/Section/Public Attributes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Attributes"></a>
+                  <h3 class="section-name"><p>Public Attributes</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC7messagexvp"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC7messagexvp">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Single incoming <code>RequestModel</code> value which type is defined by the class constraint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">RequestModel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC05vaporD05Vapor0D0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/vaporRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC05vaporD05Vapor0D0Cvp">vaporRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vapor <code>Request</code> from which the gRPC request was instantiated. This reference is required by the <code><a href="../Protocols/GRPCRequestType.html">GRPCRequestType</a></code> protocol.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">vaporRequest</span><span class="p">:</span> <span class="kt">Request</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Attributes"></a>
+                <a name="//apple_ref/swift/Section/Internal Attributes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Internal%20Attributes"></a>
+                  <h3 class="section-name"><p>Internal Attributes</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC08responseC0AA10GRPCStreamOyq_Gvp"></a>
+                    <a name="//apple_ref/swift/Property/responseStream" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC08responseC0AA10GRPCStreamOyq_Gvp">responseStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Outgoing <code><a href="../Enums/GRPCStream.html">GRPCStream</a></code>  which type is defined by the <code>ResponseModel</code> class constraint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">responseStream</span><span class="p">:</span> <span class="kt"><a href="../Enums/GRPCStream.html">GRPCStream</a></span><span class="o">&lt;</span><span class="kt">ResponseModel</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC4next3NIO16EventLoopPromiseVyAA10GRPCStreamOyq_GGvp"></a>
+                    <a name="//apple_ref/swift/Property/next" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC4next3NIO16EventLoopPromiseVyAA10GRPCStreamOyq_GGvp">next</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Promise of the next <code><a href="../Enums/GRPCStream.html">GRPCStream</a></code> message that is used to refernce the next message from the current one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">next</span><span class="p">:</span> <span class="kt">EventLoopPromise</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/GRPCStream.html">GRPCStream</a></span><span class="o">&lt;</span><span class="kt">ResponseModel</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC7message05vaporD0ACyxq_Gx_5Vapor0D0Ctcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(message:vaporRequest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC7message05vaporD0ACyxq_Gx_5Vapor0D0Ctcfc">init(message:vaporRequest:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>GRPCServerStreamRequest</code> with the single incoming <code>RequestModel</code> and associated Vapor <code>Request</code>.
+ This initializer stores both of these parameters as public attributes.
+ It also creates a promise for the first message and a start stream message with the first message promise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">RequestModel</span><span class="p">,</span> <span class="nv">vaporRequest</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Single incoming <code>RequestModel</code> value which type is defined by the class constraint.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vaporRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vapor <code>Request</code> instance of the incoming Vapor call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Methods"></a>
+                  <h3 class="section-name"><p>Public Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC12sendResponse7messageyq__tF"></a>
+                    <a name="//apple_ref/swift/Method/sendResponse(message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC12sendResponse7messageyq__tF">sendResponse(message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a response of type <code>ResponseModel</code> by succeeding the promise of the previous message with the response message value and a promise for the next stream message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendResponse</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">ResponseModel</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Single outgoing <code>ResponseModel</code> object which will be sent as a response.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor23GRPCServerStreamRequestC7sendEndyyF"></a>
+                    <a name="//apple_ref/swift/Method/sendEnd()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor23GRPCServerStreamRequestC7sendEndyyF">sendEnd()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ends the response stream by succeeding the promise of the previous message with a stream end message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendEnd</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Michael</a>. All rights reserved. (Last updated: 2020-03-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

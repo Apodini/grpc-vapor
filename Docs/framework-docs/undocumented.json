@@ -1,1710 +1,471 @@
 {
   "warnings": [
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
       "line": 10,
-      "symbol": "AnalyzeResult",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 11,
-      "symbol": "AnalyzeResult.services",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 12,
-      "symbol": "AnalyzeResult.models",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 14,
-      "symbol": "AnalyzeResult.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 16,
-      "symbol": "AnalyzeResult.mergeResults(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 22,
-      "symbol": "AnalyzeResult.mergeResults(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 27,
-      "symbol": "AnalyzeResult.mergeServices(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/AnalyzeResult.swift",
-      "line": 37,
-      "symbol": "AnalyzeResult.mergeModels(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Attribute.swift",
-      "line": 10,
-      "symbol": "Attribute",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Attribute.swift",
-      "line": 11,
-      "symbol": "Attribute.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Attribute.swift",
-      "line": 12,
-      "symbol": "Attribute.specifiedFieldNumber",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Attribute.swift",
-      "line": 13,
-      "symbol": "Attribute.swiftType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Attribute.swift",
-      "line": 15,
-      "symbol": "Attribute.init(name:id:swiftType:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 10,
-      "symbol": "CallType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 11,
-      "symbol": "CallType.unaryCall",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 12,
-      "symbol": "CallType.clientStream",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 13,
-      "symbol": "CallType.serverStream",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 14,
-      "symbol": "CallType.bidirectionalStream",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 16,
-      "symbol": "CallType.init(requestType:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 31,
-      "symbol": "CallType.requestType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/CallType.swift",
-      "line": 40,
-      "symbol": "CallType.callHandlerType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/InheritedType.swift",
-      "line": 10,
-      "symbol": "InheritedType",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/InheritedType.swift",
-      "line": 11,
-      "symbol": "InheritedType.CodingKeys",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/InheritedType.swift",
-      "line": 12,
-      "symbol": "InheritedType.CodingKeys.name",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/InheritedType.swift",
-      "line": 14,
-      "symbol": "InheritedType.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 10,
-      "symbol": "Method",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 11,
-      "symbol": "Method.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 12,
-      "symbol": "Method.parameterName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 13,
-      "symbol": "Method.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 14,
-      "symbol": "Method.inputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Method.swift",
-      "line": 15,
-      "symbol": "Method.outputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 14,
-      "symbol": "Model.fullName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 15,
-      "symbol": "Model.implementsGRPCModel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 16,
-      "symbol": "Model.attributes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 18,
-      "symbol": "Model.init(fullName:isModel:attributes:attributeCases:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 25,
-      "symbol": "Model.addAttributeCases(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 37,
-      "symbol": "Model.addAttribute(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 44,
-      "symbol": "Model.addAttributes(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Model.swift",
-      "line": 50,
-      "symbol": "Model.mergeModel(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 10,
-      "symbol": "Node",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 11,
-      "symbol": "Node.CodingKeys",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 12,
-      "symbol": "Node.CodingKeys.childNodes",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 13,
-      "symbol": "Node.CodingKeys.length",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 14,
-      "symbol": "Node.CodingKeys.name",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 15,
-      "symbol": "Node.CodingKeys.inheritedTypes",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 16,
-      "symbol": "Node.CodingKeys.kind",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 17,
-      "symbol": "Node.CodingKeys.type",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 18,
-      "symbol": "Node.CodingKeys.offset",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 19,
-      "symbol": "Node.CodingKeys.elements",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 22,
-      "symbol": "Node.childNodes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 23,
-      "symbol": "Node.length",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 24,
-      "symbol": "Node.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 25,
-      "symbol": "Node.inheritedTypes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 26,
-      "symbol": "Node.elements",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 27,
-      "symbol": "Node.kind",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 28,
-      "symbol": "Node.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 29,
-      "symbol": "Node.offset",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 32,
-      "symbol": "Kind",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 33,
-      "symbol": "Kind.class",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 34,
-      "symbol": "Kind.struct",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 35,
-      "symbol": "Kind.enumelement",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 36,
-      "symbol": "Kind.method",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 37,
-      "symbol": "Kind.var",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 38,
-      "symbol": "Kind.parameter",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 39,
-      "symbol": "Kind.extension",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 40,
-      "symbol": "Kind.enum",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 41,
-      "symbol": "Kind.enumcase",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 42,
-      "symbol": "Kind.initexpr",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Node.swift",
-      "line": 43,
-      "symbol": "Kind.other",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 10,
-      "symbol": "Service",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 12,
-      "symbol": "Service.fullName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 13,
-      "symbol": "Service.isService",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 14,
-      "symbol": "Service.methods",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 16,
-      "symbol": "Service.init(fullName:isService:methods:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 22,
-      "symbol": "Service.addMethod(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 26,
-      "symbol": "Service.addMethods(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/Service.swift",
-      "line": 32,
-      "symbol": "Service.mergeService(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 10,
-      "symbol": "ValueType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 11,
-      "symbol": "ValueType.double",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 12,
-      "symbol": "ValueType.float",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 13,
-      "symbol": "ValueType.int32",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 14,
-      "symbol": "ValueType.int64",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 15,
-      "symbol": "ValueType.int",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 16,
-      "symbol": "ValueType.uint64",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 17,
-      "symbol": "ValueType.uint32",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 18,
-      "symbol": "ValueType.sint32",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 19,
-      "symbol": "ValueType.sint64",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 20,
-      "symbol": "ValueType.fixed32",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 21,
-      "symbol": "ValueType.fixed64",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 22,
-      "symbol": "ValueType.sfixed32",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 23,
-      "symbol": "ValueType.sfixed64",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 24,
-      "symbol": "ValueType.bool",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 25,
-      "symbol": "ValueType.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 26,
-      "symbol": "ValueType.bytes",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 27,
-      "symbol": "ValueType.uuid",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 29,
-      "symbol": "ValueType.init(typeName:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/AnalyzeStructures/ValueType.swift",
-      "line": 58,
-      "symbol": "ValueType.swiftType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/Analyzer.swift",
-      "line": 12,
-      "symbol": "Analyzer",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/Analyzer.swift",
-      "line": 14,
-      "symbol": "Analyzer.analyzeFiles(at:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/Analyzer.swift",
-      "line": 20,
-      "symbol": "Analyzer.analyzeFile(path:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/CodeAnalyzer.swift",
-      "line": 12,
-      "symbol": "CodeAnalyzer.analyze(inputPath:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 12,
-      "symbol": "FileAnaylzer",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 13,
-      "symbol": "FileAnaylzer.sourceCode",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 14,
-      "symbol": "FileAnaylzer.structure",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 15,
-      "symbol": "FileAnaylzer.rootNode",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 17,
-      "symbol": "FileAnaylzer.init(path:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 30,
-      "symbol": "FileAnaylzer.analyze()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 37,
-      "symbol": "FileAnaylzer.analyzeNode(node:parentName:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 81,
-      "symbol": "FileAnaylzer.analyzeAttributeCase(structure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 98,
-      "symbol": "FileAnaylzer.analyzeAttribute(structure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileAnalyzer.swift",
-      "line": 105,
-      "symbol": "FileAnaylzer.analyzeMethod(structure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileCollector.swift",
-      "line": 10,
-      "symbol": "FileCollector",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileCollector.swift",
-      "line": 12,
-      "symbol": "FileCollector.collectSwiftFiles(inputPath:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/FileCollector.swift",
-      "line": 29,
-      "symbol": "FileCollector.getAllFilePaths(in:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/IntegrityChecker.swift",
-      "line": 10,
-      "symbol": "IntegrityChecker",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeAnalyzer/IntegrityChecker.swift",
-      "line": 11,
-      "symbol": "IntegrityChecker.createApplication(from:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeGenerator/CodeGenerator.swift",
-      "line": 10,
-      "symbol": "CodeGenerator",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeGenerator/CodeGenerator.swift",
-      "line": 11,
-      "symbol": "CodeGenerator.outputPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/CodeGenerator/CodeGenerator.swift",
-      "line": 13,
-      "symbol": "CodeGenerator.generate(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 11,
-      "symbol": "CodegenCommand",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 14,
-      "symbol": "CodegenCommand.inputPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 17,
-      "symbol": "CodegenCommand.outputPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 19,
-      "symbol": "CodegenCommand.run()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 28,
-      "symbol": "InputPath",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 31,
-      "symbol": "InputPath.init(argumentValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 51,
-      "symbol": "InputPath.default",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 53,
-      "symbol": "InputPath.noPath",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 54,
-      "symbol": "InputPath.project(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 55,
-      "symbol": "InputPath.directory(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 56,
-      "symbol": "InputPath.swiftFile(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 57,
-      "symbol": "InputPath.package(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 61,
-      "symbol": "OutputPath",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 65,
-      "symbol": "OutputPath.default",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 67,
-      "symbol": "OutputPath.init(argumentValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 75,
-      "symbol": "OutputPath.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 79,
-      "symbol": "OutputPath.path",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 82,
-      "symbol": "ArgumentError",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 83,
-      "symbol": "ArgumentError.inputPathNotExisting(path:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 84,
-      "symbol": "ArgumentError.inputPathNotReadable(path:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 85,
-      "symbol": "ArgumentError.inputInvalidFileType(type:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 86,
-      "symbol": "ArgumentError.inputPathUnknownFormat",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 87,
-      "symbol": "ArgumentError.outputPathNotExisting(path:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/CodegenCommand.swift",
-      "line": 88,
-      "symbol": "ArgumentError.outputPathNotWriteable(path:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/GeneratorCommands.swift",
-      "line": 10,
-      "symbol": "GeneratorCommands",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Commands/GeneratorCommands.swift",
-      "line": 13,
-      "symbol": "GeneratorCommands.codegen",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 10,
-      "symbol": "Generator",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 11,
-      "symbol": "Generator.maxFielNo",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 12,
-      "symbol": "Generator.outputPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 14,
-      "symbol": "Generator.servicePath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 15,
-      "symbol": "Generator.modelPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 16,
-      "symbol": "Generator.protoPath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 17,
-      "symbol": "Generator.protoFilePath",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 19,
-      "symbol": "Generator.indent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 20,
-      "symbol": "Generator.emptyLine",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 22,
-      "symbol": "Generator.init(outputPath:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 30,
-      "symbol": "Generator.generate(from:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 36,
-      "symbol": "Generator.generateProtoFile(application:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 61,
-      "symbol": "Generator.generateProtoModel(model:protoFile:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 72,
-      "symbol": "Generator.generateProtoAttribute(attribute:protoFile:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 87,
-      "symbol": "Generator.generateModels(models:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 96,
-      "symbol": "Generator.generateModel(model:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 103,
-      "symbol": "Generator.generateServices(services:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 112,
-      "symbol": "Generator.generateService(service:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 137,
-      "symbol": "Generator.generateMethod(method:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 150,
-      "symbol": "Generator.indent(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 154,
-      "symbol": "Generator.introduction(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 162,
-      "symbol": "Generator.generateModelExtension(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 198,
-      "symbol": "Generator.generateModelAttribute(attribute:fileWriter:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 215,
-      "symbol": "Generator.generateMessageAttribute(attribute:model:fileWriter:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 227,
-      "symbol": "String.capitalizedFirstCharacter",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 232,
-      "symbol": "FileWriter",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 233,
-      "symbol": "FileWriter.text",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 234,
-      "symbol": "FileWriter.indent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 235,
-      "symbol": "FileWriter.indentionLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 237,
-      "symbol": "FileWriter.println(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 245,
-      "symbol": "FileWriter.printlnIndent(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 249,
-      "symbol": "FileWriter.startIndent()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 253,
-      "symbol": "FileWriter.endIndent()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Generator.swift",
-      "line": 258,
-      "symbol": "FileWriter.indent(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoModelGenerator.swift",
-      "line": 10,
-      "symbol": "ProtoModelGenerator",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoModelGenerator.swift",
-      "line": 11,
-      "symbol": "ProtoModelGenerator.generate(models:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoModelGenerator.swift",
-      "line": 19,
-      "symbol": "ProtoModelGenerator.parentModel(knownModels:remainingSuffixes:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoModelGenerator.swift",
-      "line": 30,
-      "symbol": "ProtoModelGenerator.insertModel(parent:knownModels:model:remainingSuffixes:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 10,
-      "symbol": "AttributeType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 11,
-      "symbol": "AttributeType.scalarType(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 12,
-      "symbol": "AttributeType.custom(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 13,
-      "symbol": "AttributeType.array(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 14,
-      "symbol": "AttributeType.dictionary(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 15,
-      "symbol": "AttributeType.optional(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 17,
-      "symbol": "AttributeType.init(keyType:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 24,
-      "symbol": "AttributeType.init(subtypeName:context:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 35,
-      "symbol": "AttributeType.init(typeName:context:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 81,
-      "symbol": "AttributeType.protoString",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 103,
-      "symbol": "AttributeType.swiftString",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 120,
-      "symbol": "CustomTypeSearchable",
+      "symbol": "AnyCallHandler",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/AttributeType.swift",
-      "line": 121,
-      "symbol": "CustomTypeSearchable.getModelType(typeName:knownModels:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/GRPCApplication.swift",
-      "line": 10,
-      "symbol": "GRPCApplication",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/GRPCApplication.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
       "line": 11,
-      "symbol": "GRPCApplication.models",
+      "symbol": "AnyCallHandler.vaporRequest",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/GRPCApplication.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
       "line": 12,
-      "symbol": "GRPCApplication.services",
+      "symbol": "AnyCallHandler.errorResponse",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
-      "line": 10,
-      "symbol": "ProtoAttribute",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
-      "line": 11,
-      "symbol": "ProtoAttribute.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
-      "line": 12,
-      "symbol": "ProtoAttribute.fieldNumber",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
       "line": 13,
-      "symbol": "ProtoAttribute.type",
+      "symbol": "AnyCallHandler.response",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
-      "line": 14,
-      "symbol": "ProtoAttribute.protoOptionalName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoAttribute.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
       "line": 17,
-      "symbol": "ProtoAttribute",
+      "symbol": "AnyCallHandler",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 18,
+      "symbol": "AnyCallHandler.errorResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
       "line": 10,
-      "symbol": "ProtoMethod",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 11,
-      "symbol": "ProtoMethod.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 12,
-      "symbol": "ProtoMethod.parameterName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 13,
-      "symbol": "ProtoMethod.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 14,
-      "symbol": "ProtoMethod.inputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 15,
-      "symbol": "ProtoMethod.outputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 17,
-      "symbol": "ProtoMethod.protoInputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoMethod.swift",
-      "line": 26,
-      "symbol": "ProtoMethod.protoOutputType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 10,
-      "symbol": "ProtoModel",
+      "symbol": "ClientStreamingCallHandler",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
       "line": 11,
-      "symbol": "ProtoModel.model",
+      "symbol": "ClientStreamingCallHandler.vaporRequest",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 12,
-      "symbol": "ProtoModel.fullName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
       "line": 13,
-      "symbol": "ProtoModel.suffixName",
+      "symbol": "ClientStreamingCallHandler.response",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 14,
-      "symbol": "ProtoModel.protoSuffixName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
       "line": 15,
-      "symbol": "ProtoModel.protoFullName",
+      "symbol": "ClientStreamingCallHandler.promise",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 16,
-      "symbol": "ProtoModel.parent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
       "line": 17,
-      "symbol": "ProtoModel.attributes",
+      "symbol": "ClientStreamingCallHandler.procedureCall",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 18,
-      "symbol": "ProtoModel.subModels",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 20,
-      "symbol": "ProtoModel.init(_:suffix:parent:subModels:)",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 19,
+      "symbol": "ClientStreamingCallHandler.init(vaporRequest:procedureCall:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 29,
-      "symbol": "ProtoModel.generateAttributes(knownModels:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 56,
-      "symbol": "CustomTypeContext",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 58,
-      "symbol": "ProtoModel",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 59,
-      "symbol": "ProtoModel.getModelType(typeName:knownModels:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 77,
-      "symbol": "ProtoModel.rootParent()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 81,
-      "symbol": "ProtoModel.getModelType(typeName:startPrefix:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 88,
-      "symbol": "ProtoModel.getModelType(typeName:ignoring:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 99,
-      "symbol": "ProtoModel",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 105,
-      "symbol": "FieldNumberGenerator",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 106,
-      "symbol": "FieldNumberGenerator.usedFieldNumbers",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 107,
-      "symbol": "FieldNumberGenerator.reservedFieldNumbers",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 108,
-      "symbol": "FieldNumberGenerator.lastUsedNumber",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 110,
-      "symbol": "FieldNumberGenerator.init(reservedFields:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 114,
-      "symbol": "FieldNumberGenerator.next()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoModel.swift",
-      "line": 129,
-      "symbol": "FieldNumberGenerator.generateFieldNumbers(k:reservedFieldNumbers:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoService.swift",
-      "line": 10,
-      "symbol": "ProtoService",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoService.swift",
-      "line": 11,
-      "symbol": "ProtoService.fullName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoService.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/Request+Extensions.swift",
       "line": 12,
-      "symbol": "ProtoService.methods",
+      "symbol": "HTTPHeaders.contentCoding",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoService.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
+      "line": 11,
+      "symbol": "RequestProcessable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
+      "line": 12,
+      "symbol": "RequestProcessable.RequestMessage",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
+      "line": 13,
+      "symbol": "RequestProcessable.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
       "line": 14,
-      "symbol": "ProtoService.protoName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/ProtoStructures/ProtoService.swift",
-      "line": 21,
-      "symbol": "ProtoService.init(service:knownModels:)",
+      "symbol": "RequestProcessable.processRequest(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/Generator/Utils/String+Extensions.swift",
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
+      "line": 17,
+      "symbol": "RequestProcessable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/RequestProcessable.swift",
+      "line": 18,
+      "symbol": "RequestProcessable.processRequest(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
       "line": 11,
-      "symbol": "String.removeSpaces()",
+      "symbol": "ResponseProcessable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
+      "line": 12,
+      "symbol": "ResponseProcessable.ResponseMessage",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
+      "line": 13,
+      "symbol": "ResponseProcessable.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
+      "line": 14,
+      "symbol": "ResponseProcessable.processResponse(_:buffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
+      "line": 17,
+      "symbol": "ResponseProcessable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ResponseProcessable.swift",
+      "line": 18,
+      "symbol": "ResponseProcessable.processResponse(_:buffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 10,
+      "symbol": "ServerStreamingCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 12,
+      "symbol": "ServerStreamingCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 14,
+      "symbol": "ServerStreamingCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 16,
+      "symbol": "ServerStreamingCallHandler.promise",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 17,
+      "symbol": "ServerStreamingCallHandler.request",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 19,
+      "symbol": "ServerStreamingCallHandler.procedureCall",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 20,
+      "symbol": "ServerStreamingCallHandler.handler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 23,
+      "symbol": "ServerStreamingCallHandler.init(vaporRequest:procedureCall:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 48,
+      "symbol": "ServerStreamingCallHandler.endResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 10,
+      "symbol": "StreamingCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 12,
+      "symbol": "StreamingCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 14,
+      "symbol": "StreamingCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 16,
+      "symbol": "StreamingCallHandler.promise",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 17,
+      "symbol": "StreamingCallHandler.request",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 19,
+      "symbol": "StreamingCallHandler.eventFactory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 20,
+      "symbol": "StreamingCallHandler.handler",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 23,
+      "symbol": "StreamingCallHandler.init(vaporRequest:eventFactory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 58,
+      "symbol": "StreamingCallHandler.endResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 11,
+      "symbol": "StreamingResponseProcessable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 12,
+      "symbol": "StreamingResponseProcessable.ResponseMessage",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 13,
+      "symbol": "StreamingResponseProcessable.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 14,
+      "symbol": "StreamingResponseProcessable.processResponse(_:buffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 15,
+      "symbol": "StreamingResponseProcessable.endResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 18,
+      "symbol": "StreamingResponseProcessable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 19,
+      "symbol": "StreamingResponseProcessable.processResponse(_:buffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingResponseProcessable.swift",
+      "line": 32,
+      "symbol": "StreamingResponseProcessable.processResponseMessage(message:writer:buffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 10,
+      "symbol": "UnaryCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 12,
+      "symbol": "UnaryCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 14,
+      "symbol": "UnaryCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 16,
+      "symbol": "UnaryCallHandler.promise",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 18,
+      "symbol": "UnaryCallHandler.eventObserverFactory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 20,
+      "symbol": "UnaryCallHandler.init(vaporRequest:eventObserverFactory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCError.swift",
+      "line": 10,
+      "symbol": "GRPCError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCError.swift",
+      "line": 11,
+      "symbol": "GRPCError.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 10,
+      "symbol": "GRPCStream",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 11,
+      "symbol": "GRPCStream.start(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 12,
+      "symbol": "GRPCStream.message(_:nextMessage:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 13,
+      "symbol": "GRPCStream.end",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 10,
+      "symbol": "GRPCStreamRequest",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 29,
+      "symbol": "GRPCStreamRequest.init(messageStream:vaporRequest:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 90,
+      "symbol": "GRPCStreamRequest.sendEnd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michaelschlicker/Uni/BA/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 96,
+      "symbol": "GRPCStreamRequest.respondforEach(onNext:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

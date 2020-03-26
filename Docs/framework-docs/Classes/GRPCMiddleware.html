@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GRPCMiddleware Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GRPCMiddleware" class="dashAnchor"></a>
+    <a title="GRPCMiddleware Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GRPCVapor Docs</a> (43% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GRPCVapor Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GRPCMiddleware Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ClientStreamingCallHandler.html">ClientStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCClientStreamRequest.html">GRPCClientStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCMiddleware.html">GRPCMiddleware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCRequest.html">GRPCRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCServerStreamRequest.html">GRPCServerStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GRPCStreamRequest.html">GRPCStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerStreamingCallHandler.html">ServerStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StreamingCallHandler.html">StreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnaryCallHandler.html">UnaryCallHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/GRPCError.html">GRPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GRPCStream.html">GRPCStream</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCMessage.html">GRPCMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCModel.html">GRPCModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCRequestType.html">GRPCRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GRPCService.html">GRPCService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RequestProcessable.html">RequestProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ResponseProcessable.html">ResponseProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StreamingResponseProcessable.html">StreamingResponseProcessable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GRPCMiddleware</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GRPCMiddleware</span> <span class="p">:</span> <span class="kt">Middleware</span></code></pre>
+
+                </div>
+              </div>
+            <p>A <code>GRPCMiddleware</code> instance can be integrated as a middleware into the Vapor application like this:</p>
+
+<p><code>app.middleware.use(GRPCMiddleware())</code></p>
+
+<p>This middleware checks the content-type of incoming requests and in handles them in case of a gRPC request or forwards them to the next middleware.
+It implements Vapor&rsquo;s <code>Moiddleware</code> protocol which requires it to implement a <code>respond</code>function.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Variables"></a>
+                <a name="//apple_ref/swift/Section/Private Variables" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private%20Variables"></a>
+                  <h3 class="section-name"><p>Private Variables</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14GRPCMiddlewareC8services33_3329B0362E865E22AB5E9D8849A3F937LLSDySSAA11GRPCService_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/services" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14GRPCMiddlewareC8services33_3329B0362E865E22AB5E9D8849A3F937LLSDySSAA11GRPCService_pGvp">services</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dictionary containing all used <code><a href="../Protocols/GRPCService.html">GRPCService</a></code>s with the service names as their keys.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">services</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/GRPCService.html">GRPCService</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14GRPCMiddlewareC8servicesACSayAA11GRPCService_pG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(services:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14GRPCMiddlewareC8servicesACSayAA11GRPCService_pG_tcfc">init(services:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>GRPCMiddleware</code> using the <code>GRPCServices</code> passed as an argument.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">services</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/GRPCService.html">GRPCService</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>services</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/GRPCService.html">GRPCService</a></code> instances that should be included for routing.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Methods"></a>
+                  <h3 class="section-name"><p>Public Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14GRPCMiddlewareC10addServiceyyAA11GRPCService_pF"></a>
+                    <a name="//apple_ref/swift/Method/addService(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14GRPCMiddlewareC10addServiceyyAA11GRPCService_pF">addService(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds <code><a href="../Protocols/GRPCService.html">GRPCService</a></code> instance to the <code><a href="../Classes/GRPCMiddleware.html#/s:9GRPCVapor14GRPCMiddlewareC8services33_3329B0362E865E22AB5E9D8849A3F937LLSDySSAA11GRPCService_pGvp">services</a></code> dictionary.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addService</span><span class="p">(</span><span class="n">_</span> <span class="nv">service</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GRPCService.html">GRPCService</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>service</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/GRPCService.html">GRPCService</a></code> instance that should be used by the middleware.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14GRPCMiddlewareC7respond2to10chainingTo3NIO15EventLoopFutureCy5Vapor8ResponseCGAJ7RequestC_AJ9Responder_ptF"></a>
+                    <a name="//apple_ref/swift/Method/respond(to:chainingTo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14GRPCMiddlewareC7respond2to10chainingTo3NIO15EventLoopFutureCy5Vapor8ResponseCGAJ7RequestC_AJ9Responder_ptF">respond(to:chainingTo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles to incoming Vapor <code>Request</code>s and responds with an <code>EventLoopFuture</code> of a Vapor <code>Response</code>.</p>
+
+<p>This method starts out by checking if the incoming request can be handeled by this middleware or should be forwarded to the next responder.
+ It can handle the incoming request if its content-type is <code>application/grpc</code> and the <code>getCallHandler</code> method returns a call handler.
+ If this middleware can handle the request it returns the <code>response</code> of the call handler which is of type<code>EventLoopFuture&lt;Response&gt;</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">respond</span><span class="p">(</span><span class="n">to</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">,</span> <span class="n">chainingTo</span> <span class="nv">next</span><span class="p">:</span> <span class="kt">Responder</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Response</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Incoming Vapor <code>Request</code> instance that should be handled.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>next</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Responder</code>instance that either is the next middleware or the Vapor router. This one is used if the incoming request can&rsquo;t be handled by this middleware.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>EventLoopFuture</code> of a Vapor <code>Response</code> that will be sent to the client by the Vapor stack.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14GRPCMiddlewareC14getCallHandler7requestAA03AnydE0_pSg5Vapor7RequestC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCallHandler(request:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14GRPCMiddlewareC14getCallHandler7requestAA03AnydE0_pSg5Vapor7RequestC_tF">getCallHandler(request:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the associated call handler for an incoming Vapor <code>Request</code>.</p>
+
+<p>This method decodes the in the url encoded service name and procedure call name.
+ Next it gets the called service from the middleware&rsquo;s services dicitionary using the decoded service name as its key.
+ It then calls the <code>handleMethod</code> method of the called service which returns the call handler associated with the passed <code>methodName</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getCallHandler</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Incoming Vapor <code>Request</code> that contains the called service and procedure name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a></code> in case a matching call handler is found otherwise it returns <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Michael</a>. All rights reserved. (Last updated: 2020-03-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
