@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
       with: swift-version: '5.2'
+    - name: Build
       run: swift build -v
