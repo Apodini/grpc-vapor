@@ -17,7 +17,7 @@ jobs:
         swift-version: "5.2.0"
     - name: Xcode 11.4
       run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
-    - name. Xcode version check
+    - name: Xcode version check
       run: xcodebuild -version
     - name: Check version
       run: swift --version
