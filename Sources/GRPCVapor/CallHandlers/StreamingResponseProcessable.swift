@@ -55,7 +55,7 @@ extension StreamingResponseProcessable {
             let endSent = vaporRequest.eventLoop.makePromise(of: Void.self)
             writer.write(.end, promise: endSent)
             endSent.futureResult.whenComplete { _ in
-                endResponse()
+                self.endResponse()
             }
         case let .start(firstMessage):
             firstMessage.whenSuccess { mess in
