@@ -48,12 +48,15 @@ let package = Package(
         .testTarget(
             name: "GRPCVaporTests",
             dependencies: ["GRPCVapor",
-                           .product(name: "XCTVapor", package: "vapor")
+                           .product(name: "XCTVapor", package: "vapor"),
+                           .product(name: "SwiftProtobuf", package: "swift-protobuf"),
             ]
         ),
         .testTarget(
             name: "GeneratorTests",
-            dependencies: ["Generator"]
+            dependencies: ["Generator",
+            .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+]
         ),
     ]
 )
