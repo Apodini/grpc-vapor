@@ -23,9 +23,9 @@
         "package": "CLIKit",
         "repositoryURL": "https://github.com/apparata/CLIKit.git",
         "state": {
-          "branch": "master",
-          "revision": "528723c2989717718c8ca66dffc99b3a8dfbae11",
-          "version": null
+          "branch": null,
+          "revision": "6e673f16626bc3d1271b5c7c6957bce1be2b960f",
+          "version": "0.3.4"
         }
       },
       {
@@ -95,9 +95,9 @@
         "package": "GRPC",
         "repositoryURL": "https://github.com/grpc/grpc-swift.git",
         "state": {
-          "branch": "58762ba",
+          "branch": null,
           "revision": "58762bae04f54978e09032306225ddffc9c0fc5a",
-          "version": null
+          "version": "1.0.0-alpha.8"
         }
       },
       {
@@ -242,15 +242,6 @@
           "branch": null,
           "revision": "c7f06384dc5ce7e8506de5ed9b59e35b4d88c64b",
           "version": "1.3.0"
-        }
-      },
-      {
-        "package": "SwiftProtobuf",
-        "repositoryURL": "https://github.com/apple/swift-protobuf",
-        "state": {
-          "branch": "master",
-          "revision": "6dd839744095363620b99f247a46714e7123163b",
-          "version": null
         }
       },
       {
