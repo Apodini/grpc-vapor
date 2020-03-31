@@ -24,9 +24,9 @@ let package = Package(
         .package(name: "fluent-sqlite-driver",
                  url: "https://github.com/vapor/fluent-sqlite-driver.git",
                  from: "4.0.0-rc.1.1"),
-        .package(name: "grpc-swift",
+        .package(name: "GRPC",
                  url: "https://github.com/grpc/grpc-swift.git",
-                 from: "1.0.0-alpha.8"),
+                 .exact("1.0.0-alpha.8")),
         .package(name: "SourceKitten",
                  url: "https://github.com/jpsim/SourceKitten.git",
                  .upToNextMajor(from: "0.27.0")),
@@ -43,7 +43,7 @@ let package = Package(
         .target(
             name: "GRPCVapor",
             dependencies: [
-                .product(name: "GRPC", package: "grpc-swift"),
+                .product(name: "GRPC", package: "GRPC"),
                 .product(name: "Vapor", package: "vapor"),
                 .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
                 .product(name: "Fluent", package: "fluent"),
