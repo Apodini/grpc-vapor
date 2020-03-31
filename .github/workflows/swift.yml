@@ -22,4 +22,4 @@ jobs:
     - name: Check version
       run: swift --version
     - name: Build
-      run: swift build -v
+      run: swift build

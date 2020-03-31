@@ -11,19 +11,31 @@ let package = Package(
 
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "GRPCVapor",
-            targets: ["GRPCVapor"]),
+        .library(name: "GRPCVapor", targets: ["GRPCVapor"]),
         .executable(name: "grpc-vapor-generator", targets: ["Generator"])
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0-rc.3.5"),
-        .package(url: "https://github.com/vapor/fluent.git", from: "4.0.0-rc.1"),
-        .package(url: "https://github.com/vapor/fluent-sqlite-driver.git", from: "4.0.0-rc.1.1"),
-        .package(url: "https://github.com/grpc/grpc-swift.git", .exact("1.0.0-alpha.8")),
-        .package(url: "https://github.com/jpsim/SourceKitten.git", .upToNextMajor(from: "0.27.0")),
-        .package(url: "https://github.com/apparata/CLIKit.git", from: "0.3.4"),
-        .package(url: "https://github.com/apple/swift-protobuf", from: "1.8.0"),
+        .package(name: "vapor",
+                 url: "https://github.com/vapor/vapor.git",
+                 from: "4.0.0-rc.3.5"),
+        .package(name: "fluent",
+                 url: "https://github.com/vapor/fluent.git",
+                 from: "4.0.0-rc.1"),
+        .package(name: "fluent-sqlite-driver",
+                 url: "https://github.com/vapor/fluent-sqlite-driver.git",
+                 from: "4.0.0-rc.1.1"),
+        .package(name: "grpc-swift",
+                 url: "https://github.com/grpc/grpc-swift.git",
+                 from: "1.0.0-alpha.8"),
+        .package(name: "SourceKitten",
+                 url: "https://github.com/jpsim/SourceKitten.git",
+                 .upToNextMajor(from: "0.27.0")),
+        .package(name: "CLIKit",
+                 url: "https://github.com/apparata/CLIKit.git",
+                 from: "0.3.4"),
+        .package(name: "SwiftProtobuf",
+                 url: "https://github.com/apple/swift-protobuf",
+                 from: "1.8.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -41,22 +53,24 @@ let package = Package(
             name: "Generator",
             dependencies: [
                 .product(name: "SourceKittenFramework", package: "SourceKitten"),
-                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "SwiftProtobuf", package: "SwiftProtobuf"),
                 .product(name: "CLIKit", package: "CLIKit")
             ]
         ),
         .testTarget(
             name: "GRPCVaporTests",
-            dependencies: ["GRPCVapor",
-                           .product(name: "XCTVapor", package: "vapor"),
-                           .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+            dependencies: [
+                "GRPCVapor",
+                .product(name: "XCTVapor", package: "vapor"),
+                .product(name: "SwiftProtobuf", package: "SwiftProtobuf"),
             ]
         ),
         .testTarget(
             name: "GeneratorTests",
-            dependencies: ["Generator",
-            .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-]
+            dependencies: [
+                "Generator",
+                .product(name: "SwiftProtobuf", package: "SwiftProtobuf"),
+            ]
         ),
     ]
 )
