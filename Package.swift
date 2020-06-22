@@ -8,22 +8,20 @@ let package = Package(
     platforms: [
        .macOS(.v10_15)
     ],
-
     products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(name: "GRPCVapor", targets: ["GRPCVapor"]),
         .executable(name: "grpc-vapor-generator", targets: ["Generator"])
     ],
     dependencies: [
         .package(name: "vapor",
                  url: "https://github.com/vapor/vapor.git",
-                 from: "4.0.0-rc.3.5"),
+                 from: "4.0.0"),
         .package(name: "fluent",
                  url: "https://github.com/vapor/fluent.git",
-                 from: "4.0.0-rc.1"),
+                 from: "4.0.0"),
         .package(name: "fluent-sqlite-driver",
                  url: "https://github.com/vapor/fluent-sqlite-driver.git",
-                 from: "4.0.0-rc.1.1"),
+                 from: "4.0.0-rc.2"),
         .package(name: "GRPC",
                  url: "https://github.com/grpc/grpc-swift.git",
                  .exact("1.0.0-alpha.8")),
@@ -38,8 +36,6 @@ let package = Package(
                  from: "1.8.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "GRPCVapor",
             dependencies: [
@@ -60,7 +56,7 @@ let package = Package(
         .testTarget(
             name: "GRPCVaporTests",
             dependencies: [
-                "GRPCVapor",
+                .target(name: "GRPCVapor"),
                 .product(name: "XCTVapor", package: "vapor"),
                 .product(name: "SwiftProtobuf", package: "SwiftProtobuf"),
             ]
@@ -68,7 +64,7 @@ let package = Package(
         .testTarget(
             name: "GeneratorTests",
             dependencies: [
-                "Generator",
+                .target(name: "Generator"),
                 .product(name: "SwiftProtobuf", package: "SwiftProtobuf"),
             ]
         ),
