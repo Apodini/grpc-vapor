@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>README  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="README  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          GRPCVapor Docs
+        </a>
+         (54% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Apodini/grpc-vapor">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">GRPCVapor Reference</a>
+      <img class="carat" src="img/carat.png" />
+      README  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ClientStreamingCallHandler.html">ClientStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCClientStreamRequest.html">GRPCClientStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCMiddleware.html">GRPCMiddleware</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCRequest.html">GRPCRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCServerStreamRequest.html">GRPCServerStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCStreamRequest.html">GRPCStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ServerStreamingCallHandler.html">ServerStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StreamingCallHandler.html">StreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UnaryCallHandler.html">UnaryCallHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/GRPCError.html">GRPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/GRPCStream.html">GRPCStream</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AnyCallHandler.html">AnyCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCMessage.html">GRPCMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCModel.html">GRPCModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCRequestType.html">GRPCRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCService.html">GRPCService</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='grpc-vapor' class='heading'>gRPC Vapor</h1>
+
+<p>gRPC Vapor is a Vapor middleware framework that enables Vapor servers to support, route, encode and decode  <a href="https://grpc.io">gRPC</a> requests.</p>
+
+<p>This framework is designed to work together with the <a href="">GRPCVaporGenerator</a> which analyzes the declared gRPC services and messages and then generates the necessary supporting code to route requests, provide encoding and decoding support and provide a proto interface definition file.</p>
+
+<p>This framework is like the 1.0 version of <a href="https://github.com/grpc/grpc-swift">grpc-swift</a> build ontop of <a href="https://github.com/apple/swift-nio">SwiftNIO</a> instead of the common <a href="https://github.com/grpc/grpc">C-Core</a> for most implementations.
+This is due to usage of the <a href="https://github.com/vapor/vapor">Vapor</a> as its networking component.
+The encoding and decoding of the gRPC messages is realized using the <a href="https://github.com/apple/swift-protobuf">SwiftProtobuf</a> framework.</p>
+<h2 id='supported-systems' class='heading'>Supported Systems</h2>
+
+<p>This framework works with Vapor version 4.0 or higher and requires the Swift version to be 5.2 or higher.</p>
+<h2 id='framework' class='heading'>Framework</h2>
+
+<p>The interface of this framework primarly consists of three main components that are needed to declare and integrate gRPC services in an existing Vapor application: </p>
+
+<ul>
+<li>A <code><a href="Classes/GRPCMiddleware.html">GRPCMiddleware</a></code> that implements Vapors <code>Middleware</code> protocol and can therefore be added to a Vapor application.</li>
+<li>A <code><a href="Protocols/GRPCService.html">GRPCService</a></code> protocol that declares a structure or class as a gRPC service and provides a routing method for remote procedure calls.</li>
+<li>A <code><a href="Protocols/GRPCModel.html">GRPCModel</a></code> protocol that declares a structure or class as a gRPC message that can be used as an input or output of remote procedure calls.</li>
+</ul>
+
+<p>Additionally:</p>
+
+<p>Using call handlers
+GRPCMessage
+GRPCRequest
+GRPCStream</p>
+<h2 id='generator' class='heading'>Generator</h2>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Instructions to integrate </p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>??</p>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>If you want to contribute your own ideas and changes to feel free to create a github issue or contact me directly via e-mail <a href="mailto:michael.schlicker@tum.de">michael.schlicker@tum.de</a>.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Apodini" target="_blank" rel="external">Apodini</a>. All rights reserved. (Last updated: 2020-06-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

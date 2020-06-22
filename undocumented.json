@@ -1,0 +1,236 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 10,
+      "symbol": "AnyCallHandler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 11,
+      "symbol": "AnyCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 12,
+      "symbol": "AnyCallHandler.errorResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 13,
+      "symbol": "AnyCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 17,
+      "symbol": "AnyCallHandler",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/AnyCallHandler.swift",
+      "line": 18,
+      "symbol": "AnyCallHandler.errorResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 10,
+      "symbol": "ClientStreamingCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 11,
+      "symbol": "ClientStreamingCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 13,
+      "symbol": "ClientStreamingCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 17,
+      "symbol": "ClientStreamingCallHandler.procedureCall",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ClientStreamingCallHandler.swift",
+      "line": 19,
+      "symbol": "ClientStreamingCallHandler.init(vaporRequest:procedureCall:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 10,
+      "symbol": "ServerStreamingCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 12,
+      "symbol": "ServerStreamingCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 14,
+      "symbol": "ServerStreamingCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/ServerStreamingCallHandler.swift",
+      "line": 23,
+      "symbol": "ServerStreamingCallHandler.init(vaporRequest:procedureCall:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 10,
+      "symbol": "StreamingCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 12,
+      "symbol": "StreamingCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 14,
+      "symbol": "StreamingCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/StreamingCallHandler.swift",
+      "line": 23,
+      "symbol": "StreamingCallHandler.init(vaporRequest:procedureCall:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 10,
+      "symbol": "UnaryCallHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 12,
+      "symbol": "UnaryCallHandler.vaporRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 14,
+      "symbol": "UnaryCallHandler.response",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 18,
+      "symbol": "UnaryCallHandler.procedureCall",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/CallHandlers/UnaryCallHandler.swift",
+      "line": 20,
+      "symbol": "UnaryCallHandler.init(vaporRequest:procedureCall:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCError.swift",
+      "line": 10,
+      "symbol": "GRPCError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCError.swift",
+      "line": 11,
+      "symbol": "GRPCError.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 10,
+      "symbol": "GRPCStream",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 11,
+      "symbol": "GRPCStream.start(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 12,
+      "symbol": "GRPCStream.message(_:nextMessage:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStream.swift",
+      "line": 13,
+      "symbol": "GRPCStream.end",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 10,
+      "symbol": "GRPCStreamRequest",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 90,
+      "symbol": "GRPCStreamRequest.sendEnd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor/Sources/GRPCVapor/GRPCRequestTypes/GRPCStreamingRequest.swift",
+      "line": 96,
+      "symbol": "GRPCStreamRequest.respondforEach(onNext:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/runners/2.263.0/work/grpc-vapor/grpc-vapor"
+}

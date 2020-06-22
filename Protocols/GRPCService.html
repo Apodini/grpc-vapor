@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GRPCService Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/GRPCService" class="dashAnchor"></a>
+
+    <a title="GRPCService Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          GRPCVapor Docs
+        </a>
+         (54% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Apodini/grpc-vapor">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">GRPCVapor Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      GRPCService Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ClientStreamingCallHandler.html">ClientStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GRPCClientStreamRequest.html">GRPCClientStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GRPCMiddleware.html">GRPCMiddleware</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GRPCRequest.html">GRPCRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GRPCServerStreamRequest.html">GRPCServerStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GRPCStreamRequest.html">GRPCStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServerStreamingCallHandler.html">ServerStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/StreamingCallHandler.html">StreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/UnaryCallHandler.html">UnaryCallHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GRPCError.html">GRPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GRPCStream.html">GRPCStream</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AnyCallHandler.html">AnyCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GRPCMessage.html">GRPCMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GRPCModel.html">GRPCModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GRPCRequestType.html">GRPCRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GRPCService.html">GRPCService</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>GRPCService</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GRPCService</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>GRPCService</code> is a protocol that is implemented to declare gRPC services that can contain remote procedure calls.
+ This protocol requires services to contain a <code>serviceName</code> and provide a <code>handleMethod</code>method that maps requests to call handlers which can call the procedures.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor11GRPCServiceP11serviceNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor11GRPCServiceP11serviceNameSSvp">serviceName</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string containing the services name.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of the <code>serviceName</code> returns the last part of the services class or struct name using reflection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">serviceName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor11GRPCServiceP12handleMethod10methodName12vaporRequestAA14AnyCallHandler_pSgSS_5Vapor0H0CtF"></a>
+                    <a name="//apple_ref/swift/Method/handleMethod(methodName:vaporRequest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor11GRPCServiceP12handleMethod10methodName12vaporRequestAA14AnyCallHandler_pSgSS_5Vapor0H0CtF">handleMethod(methodName:<wbr>vaporRequest:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns associated call handler of the service for a procedure call name and the associated Vapor <code>Request</code>.</p>
+
+<p>This method is usually generated by the code generator for every <code>GRPCService</code>.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of the <code>handleMethod</code> method always returns <code>nil</code>. T
+ This implementation should be overriden by the code generated for every service.
+ The default implementation however is provided in order to prevent syntax errors before running the code generator and developers from implementing this method themselves.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleMethod</span><span class="p">(</span><span class="nv">methodName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">vaporRequest</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>methodName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String</code> with the name of the called remote procedure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Protocols/AnyCallHandler.html">AnyCallHandler</a></code> call handler that calls the requested procedure.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Apodini" target="_blank" rel="external">Apodini</a>. All rights reserved. (Last updated: 2020-06-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

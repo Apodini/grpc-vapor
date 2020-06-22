@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+
+    <a title="Protocols  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          GRPCVapor Docs
+        </a>
+         (54% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Apodini/grpc-vapor">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">GRPCVapor Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Protocols  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ClientStreamingCallHandler.html">ClientStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCClientStreamRequest.html">GRPCClientStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCMiddleware.html">GRPCMiddleware</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCRequest.html">GRPCRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCServerStreamRequest.html">GRPCServerStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GRPCStreamRequest.html">GRPCStreamRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ServerStreamingCallHandler.html">ServerStreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StreamingCallHandler.html">StreamingCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UnaryCallHandler.html">UnaryCallHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/GRPCError.html">GRPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/GRPCStream.html">GRPCStream</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AnyCallHandler.html">AnyCallHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCMessage.html">GRPCMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCModel.html">GRPCModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCRequestType.html">GRPCRequestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/GRPCService.html">GRPCService</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor14AnyCallHandlerP"></a>
+                    <a name="//apple_ref/swift/Protocol/AnyCallHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor14AnyCallHandlerP">AnyCallHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/AnyCallHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AnyCallHandler</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor11GRPCMessageP"></a>
+                    <a name="//apple_ref/swift/Protocol/GRPCMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor11GRPCMessageP">GRPCMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>GRPCMessage</code> is a protocol that is implemented by gRPC protocol buffer message structures that are generated by the code generator.</p>
+
+<p>Every implementation is associated with a <code><a href="Protocols/GRPCModel.html">GRPCModel</a></code> which can be used to instantiate a <code>GRPCMessage</code> that also offers a method that convertd the message to a model type.
+ Implementations of this protocol also need to conform to the <code>Message</code> protocol provided by the <code>SwiftProtobuf</code> framework which includes all the necessary requirements to encode a <code>GRPCMessage</code> as a protocol buffer message.</p>
+
+                        <a href="Protocols/GRPCMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GRPCMessage</span> <span class="p">:</span> <span class="kt">Message</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor9GRPCModelP"></a>
+                    <a name="//apple_ref/swift/Protocol/GRPCModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor9GRPCModelP">GRPCModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>GRPCModel</code> is a protocol that is implemented by models in the existing code to declare them ad gRPC messages.</p>
+
+<p>It provides <strong>NO</strong> conformance to the <code>SwiftProtobuf.Message</code> protocol which is used to encode and decode protocol buffer messages. This functionality is realitzed by provided by the <code><a href="Protocols/GRPCMessage.html">GRPCMessage</a></code>protocol.
+ This protocol requires the models to contain an empty initializer to make code generated mappings between <code>GRPCModel</code>  and <code><a href="Protocols/GRPCMessage.html">GRPCMessage</a></code> instances easier.</p>
+
+                        <a href="Protocols/GRPCModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GRPCModel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor15GRPCRequestTypeP"></a>
+                    <a name="//apple_ref/swift/Protocol/GRPCRequestType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor15GRPCRequestTypeP">GRPCRequestType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>GRPCRequestType</code> is a protocol that is implemented by all gRPC request classes and requires attributes used by common default implementations.</p>
+
+<p>Currently the only required attribute is a reference to the used Vapor <code>Request</code> which is used to provide shortcuts for using the associated Fluent database and the request&rsquo;s <code>EventLoop</code>.</p>
+
+                        <a href="Protocols/GRPCRequestType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GRPCRequestType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9GRPCVapor11GRPCServiceP"></a>
+                    <a name="//apple_ref/swift/Protocol/GRPCService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9GRPCVapor11GRPCServiceP">GRPCService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>GRPCService</code> is a protocol that is implemented to declare gRPC services that can contain remote procedure calls.
+ This protocol requires services to contain a <code>serviceName</code> and provide a <code>handleMethod</code>method that maps requests to call handlers which can call the procedures.</p>
+
+                        <a href="Protocols/GRPCService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GRPCService</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Apodini" target="_blank" rel="external">Apodini</a>. All rights reserved. (Last updated: 2020-06-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
