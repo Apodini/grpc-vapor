@@ -1,4 +1,4 @@
-module: "gRPC Vapor"
+module: GRPCVapor
 author: Apodini
 theme: fullwidth
 output: ./docs
